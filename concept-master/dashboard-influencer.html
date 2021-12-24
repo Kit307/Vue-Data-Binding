@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/libs/css/style.css">
+	<link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+	<link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
+	<link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+	<!-- development version, includes helpful console warnings -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<link rel="stylesheet" href="/concept-master/assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link href="/concept-master/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="/concept-master/assets/libs/css/style.css">
+	<link rel="stylesheet" href="/concept-master/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+	<title>Kit Profile</title>
+
+</head>
+
+<body>
+	<!-- ============================================================== -->
+	<!-- main wrapper -->
+	<!-- ============================================================== -->
+	<div class="dashboard-main-wrapper" id="app">
+		<!-- ============================================================== -->
+		<!-- navbar -->
+		<!-- ============================================================== -->
+		<div class="dashboard-header">
+			<nav class="navbar navbar-expand-lg bg-white fixed-top">
+				<a class="navbar-brand" href="#">Kit</a>
+				<button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon "></span>
+				</button>
+				<div class="collapse navbar-collapse " id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto navbar-right-top">
+						<li class="nav-item">
+							<div id="custom-search" class="top-search-bar">
+								<input class="form-control" type="text" placeholder="Search..">
+							</div>
+						</li>
+						<li class="nav-item dropdown notification">
+							<a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span
+									class="indicator"></span></a>
+							<ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+								<li>
+									<div class="notification-title"> Notification</div>
+									<div class="notification-list">
+										<div class="list-group">
+											<a href="#" class="list-group-item list-group-item-action active">
+												<div class="notification-info">
+													<div class="notification-list-user-img"><img
+															src="assets/images/avatar-2.jpg" alt=""
+															class="user-avatar-md rounded-circle"></div>
+													<div class="notification-list-user-block"><span
+															class="notification-list-user-name">Jeremy
+															Rakestraw</span>accepted your invitation to join the team.
+														<div class="notification-date">2 min ago</div>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="list-group-item list-group-item-action">
+												<div class="notification-info">
+													<div class="notification-list-user-img"><img
+															src="assets/images/avatar-3.jpg" alt=""
+															class="user-avatar-md rounded-circle"></div>
+													<div class="notification-list-user-block"><span
+															class="notification-list-user-name">John Abraham </span>is
+														now following you
+														<div class="notification-date">2 days ago</div>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="list-group-item list-group-item-action">
+												<div class="notification-info">
+													<div class="notification-list-user-img"><img
+															src="assets/images/avatar-4.jpg" alt=""
+															class="user-avatar-md rounded-circle"></div>
+													<div class="notification-list-user-block"><span
+															class="notification-list-user-name">Monaan Pechi</span> is
+														watching your main repository
+														<div class="notification-date">2 min ago</div>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="list-group-item list-group-item-action">
+												<div class="notification-info">
+													<div class="notification-list-user-img"><img
+															src="assets/images/avatar-5.jpg" alt=""
+															class="user-avatar-md rounded-circle"></div>
+													<div class="notification-list-user-block"><span
+															class="notification-list-user-name">Jessica
+															Caruso</span>accepted your invitation to join the team.
+														<div class="notification-date">2 min ago</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-footer"> <a href="#">View all notifications</a></div>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown connection">
+							<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+							<ul class="dropdown-menu dropdown-menu-right connection-dropdown">
+								<li class="connection-list">
+									<div class="row">
+										<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+											<a href="#" class="connection-item"><img src="assets/images/github.png"
+													alt=""> <span>Github</span></a>
+										</div>
+										<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+											<a href="#" class="connection-item"><img src="assets/images/dribbble.png"
+													alt=""> <span>Dribbble</span></a>
+										</div>
+										<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+											<a href="#" class="connection-item"><img src="assets/images/dropbox.png"
+													alt=""> <span>Dropbox</span></a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+											<a href="#" class="connection-item"><img src="assets/images/bitbucket.png"
+													alt=""> <span>Bitbucket</span></a>
+										</div>
+										<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+											<a href="#" class="connection-item"><img src="assets/images/mail_chimp.png"
+													alt=""><span>Mail chimp</span></a>
+										</div>
+										<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+											<a href="#" class="connection-item"><img src="assets/images/slack.png"
+													alt=""> <span>Slack</span></a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="conntection-footer"><a href="#">More</a></div>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown nav-user">
+							<a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+									src="assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+							<div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+								aria-labelledby="navbarDropdownMenuLink2">
+								<div class="nav-user-info">
+									<h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
+									<span class="status"></span><span class="ml-2">Available</span>
+								</div>
+								<a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+								<a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+								<a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- ============================================================== -->
+		<!-- end navbar -->
+		<!-- ============================================================== -->
+		<!-- ============================================================== -->
+		<!-- left sidebar -->
+		<!-- ============================================================== -->
+		<div class="nav-left-sidebar sidebar-dark">
+			<div class="menu-list">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav flex-column">
+							<li class="nav-divider">
+								Menu
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false"
+									data-target="#submenu-1" aria-controls="submenu-1"><i
+										class="fa fa-fw fa-user-circle"></i>Dashboard <span
+										class="badge badge-success">6</span></a>
+								<div id="submenu-1" class="collapse submenu">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+												data-target="#submenu-1-2" aria-controls="submenu-1-2">E-Commerce</a>
+											<div id="submenu-1-2" class="collapse submenu">
+												<ul class="nav flex-column">
+													<li class="nav-item">
+														<a class="nav-link" href="#">E Commerce Dashboard</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Product List</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Product Single</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Product Checkout</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Finance</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Sales</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+												data-target="#submenu-1-1" aria-controls="submenu-1-1">Infulencer</a>
+											<div id="submenu-1-1" class="collapse submenu">
+												<ul class="nav flex-column">
+													<li class="nav-item">
+														<a class="nav-link" href="#">Influencer</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Influencer Finder</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Influencer Profile</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+									data-target="#submenu-2" aria-controls="submenu-2"><i
+										class="fa fa-fw fa-rocket"></i>UI Elements</a>
+								<div id="submenu-2" class="collapse submenu">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="#">Cards <span
+													class="badge badge-secondary">New</span></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">General</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Carousel</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">List Group</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Typography</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Accordions</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Tabs</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+									data-target="#submenu-3" aria-controls="submenu-3"><i
+										class="fas fa-fw fa-chart-pie"></i>Chart</a>
+								<div id="submenu-3" class="collapse submenu">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="#">C3 Charts</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Chartist Charts</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Chart</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Morris</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Sparkline</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Guage</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+									data-target="#submenu-4" aria-controls="submenu-4"><i
+										class="fab fa-fw fa-wpforms"></i>Forms</a>
+								<div id="submenu-4" class="collapse submenu">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="#">Form Elements</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Parsely Validations</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Multiselect</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Date Picker</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Bootstrap Select</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+									data-target="#submenu-5" aria-controls="submenu-5"><i
+										class="fas fa-fw fa-table"></i>Tables</a>
+								<div id="submenu-5" class="collapse submenu">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="#">General Tables</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Data Tables</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-divider">
+								Features
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+									data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-fw fa-file"></i>
+									Pages </a>
+								<div id="submenu-6" class="collapse submenu">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="#">Blank Page</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Blank Page Header</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Login</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">404 page</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Sign up Page</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Forgot Password</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Pricing Tables</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Timeline</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Calendar</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Sortable/Nestable List</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Widgets</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Media Objects</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Cropper</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Color Picker</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+									data-target="#submenu-7" aria-controls="submenu-7"><i
+										class="fas fa-fw fa-inbox"></i>Apps <span
+										class="badge badge-secondary">New</span></a>
+								<div id="submenu-7" class="collapse submenu">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="#">Inbox</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Email Detail</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Email Compose</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Message Chat</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+									data-target="#submenu-8" aria-controls="submenu-8"><i
+										class="fas fa-fw fa-columns"></i>Icons</a>
+								<div id="submenu-8" class="collapse submenu">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="#">FontAwesome Icons</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Material Icons</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Simpleline Icon</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Themify Icon</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Flag Icons</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Weather Icon</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+									data-target="#submenu-9" aria-controls="submenu-9"><i
+										class="fas fa-fw fa-map-marker-alt"></i>Maps</a>
+								<div id="submenu-9" class="collapse submenu">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="#">Google Maps</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Vector Maps</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+									data-target="#submenu-10" aria-controls="submenu-10"><i
+										class="fas fa-f fa-folder"></i>Menu Level</a>
+								<div id="submenu-10" class="collapse submenu">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="#">Level 1</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+												data-target="#submenu-11" aria-controls="submenu-11">Level 2</a>
+											<div id="submenu-11" class="collapse submenu">
+												<ul class="nav flex-column">
+													<li class="nav-item">
+														<a class="nav-link" href="#">Level 1</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Level 2</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Level 3</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!-- ============================================================== -->
+		<!-- end left sidebar -->
+		<!-- ============================================================== -->
+		<!-- ============================================================== -->
+		<!-- wrapper  -->
+		<!-- ============================================================== -->
+		<div class="dashboard-wrapper">
+			<div class="dashboard-influence">
+				<div class="container-fluid dashboard-content">
+					<!-- ============================================================== -->
+					<!-- pageheader  -->
+					<!-- ============================================================== -->
+
+					<!-- ============================================================== -->
+					<!-- end pageheader  -->
+					<!-- ============================================================== -->
+					<!-- ============================================================== -->
+					<!-- content  -->
+					<!-- ============================================================== -->
+					<!-- ============================================================== -->
+					<!-- influencer profile  -->
+					<!-- ============================================================== -->
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="card influencer-profile-data">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="text-center">
+												<img src="assets/images/avatar-1.jpg" alt="User Avatar"
+													class="rounded-circle user-avatar-xxl">
+											</div>
+										</div>
+										<div class="col-xl-10 col-lg-8 col-md-8 col-sm-8 col-12">
+											<div class="user-avatar-info ">
+												<div class="m-b-20">
+													<div class="user-avatar-name">
+														<h2 class="mb-1">{{ message }}</h2>
+													</div>
+
+													<div class="rating-star  d-inline-block">
+														<i class="fa fa-fw fa-star"></i>
+														<i class="fa fa-fw fa-star"></i>
+														<i class="fa fa-fw fa-star"></i>
+														<i class="fa fa-fw fa-star"></i>
+														<i class="fa fa-fw fa-star"></i>
+														<i class="fa fa-fw fa-star"></i>
+														<i class="fa fa-fw fa-star"></i>
+														<p class="d-inline-block text-dark">9,999,999 Reviews </p>
+													</div>
+												</div>
+												<!--  <div class="float-right"><a href="#" class="user-avatar-email text-secondary">www.henrybarbara.com</a></div> -->
+												<div class="user-avatar-address">
+													<p class="border-bottom pb-3">
+														<span class="d-xl-inline-block d-block mb-2"><i
+																class="fa fa-map-marker-alt mr-2 text-primary "></i>{{
+															address}}</span>
+														<span class="mb-2 ml-xl-4 d-xl-inline-block d-block">Date of
+															birt: {{birtdate}} </span>
+														<span class=" mb-2 d-xl-inline-block d-block ml-xl-4">Male
+														</span>
+														<span class=" mb-2 d-xl-inline-block d-block ml-xl-4">{{age}}
+														</span>
+													</p>
+													<div class="mt-3">
+														<a href="#" class="badge badge-light mr-1">Python</a> <a
+															href="#" class="badge badge-light mr-1">Java</a> <a href="#"
+															class="badge badge-light">JS</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- ============================================================== -->
+					<!-- end influencer profile  -->
+					<!-- ============================================================== -->
+					<!-- ============================================================== -->
+					<!-- widgets   -->
+					<!-- ============================================================== -->
+					<div class="row">
+						<!-- ============================================================== -->
+						<!-- four widgets   -->
+						<!-- ============================================================== -->
+						<!-- ============================================================== -->
+						<!-- Faculty   -->
+						<!-- ============================================================== -->
+						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-inline-block">
+										<h5 class="text-muted">Faculty</h5>
+										<h3 class="mb-0"> {{faculty}}</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ============================================================== -->
+						<!-- end Faculty   -->
+						<!-- ============================================================== -->
+						<!-- ============================================================== -->
+						<!-- Major   -->
+						<!-- ============================================================== -->
+						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-inline-block">
+										<h5 class="text-muted">Major</h5>
+										<h3 class="mb-0"> {{major}}</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ============================================================== -->
+						<!-- end Major  -->
+						<!-- ============================================================== -->
+
+						<!-- ============================================================== -->
+						<!-- partnerships   -->
+						<!-- ============================================================== -->
+						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-inline-block">
+										<h5 class="text-muted">Level</h5>
+										<h3 class="mb-0">{{level}}</h3>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- ============================================================== -->
+						<!-- end partnerships   -->
+						<!-- ============================================================== -->
+						<!-- ============================================================== -->
+						<!-- total earned   -->
+						<!-- ============================================================== -->
+						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-inline-block">
+										<h5 class="text-muted">Grade point average</h5>
+										<h3 class="mb-0"> {{gpa}}</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ============================================================== -->
+						<!-- end total earned   -->
+						<!-- ============================================================== -->
+					</div>
+					<!-- ============================================================== -->
+					<!-- end widgets   -->
+					<!-- ============================================================== -->
+					<div class="row">
+						<!-- ============================================================== -->
+						<!-- followers by gender   -->
+						<!-- ============================================================== -->
+						<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="card">
+								<h3 class="card-header">Achievement of University</h3>
+								<div class="card-body">
+									<div id="gender_donut" style="height: 230px;"></div>
+								</div>
+								<div class="card-footer p-0 bg-white d-flex">
+									<div class="card-footer-item card-footer-item-bordered w-50">
+										<h3 class="mb-0"> {{num1}} </h3>
+										<p>{{succeed}}</p>
+									</div>
+									<div class="card-footer-item card-footer-item-bordered">
+										<h3 class="mb-0">{{num2}} </h3>
+										<p>{{unsuccessful}}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ============================================================== -->
+						<!-- end followers by gender  -->
+						<!-- ============================================================== -->
+						<!-- ============================================================== -->
+						<!-- followers by age   -->
+						<!-- ============================================================== -->
+						<div class="col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="card">
+								<h3 class="card-header"> {{language[0]}}</h3>
+								<div class="card-body">
+									<div class="mb-3">
+										<div class="d-inline-block">
+											<h4 class="mb-0">{{language[1]}}</h4>
+										</div>
+										<div class="progress mt-2 float-right progress-md">
+											<div class="progress-bar bg-secondary" role="progressbar"
+												style="width: 45%;" aria-valuenow="65" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+									</div>
+									<div class="mb-3">
+										<div class="d-inline-block">
+											<h4 class="mb-0">{{language[2]}}</h4>
+										</div>
+										<div class="progress mt-2 float-right progress-md">
+											<div class="progress-bar bg-secondary" role="progressbar"
+												style="width: 42%;" aria-valuenow="65" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+									</div>
+									<div class="mb-3">
+										<div class="d-inline-block">
+											<h4 class="mb-0">{{language[3]}}</h4>
+										</div>
+										<div class="progress mt-2 float-right progress-md">
+											<div class="progress-bar bg-secondary" role="progressbar"
+												style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+									</div>
+									<div class="mb-3">
+										<div class="d-inline-block">
+											<h4 class="mb-0">{{language[5]}}</h4>
+										</div>
+										<div class="progress mt-2 float-right progress-md">
+											<div class="progress-bar bg-secondary" role="progressbar"
+												style="width: 70%;" aria-valuenow="65" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+									</div>
+									<div class="mb-3">
+										<div class="d-inline-block">
+											<h4 class="mb-0">{{language[6]}}</h4>
+										</div>
+										<div class="progress mt-2 float-right progress-md">
+											<div class="progress-bar bg-secondary" role="progressbar"
+												style="width: 35%;" aria-valuenow="65" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- ============================================================== -->
+						<!-- end followers by age   -->
+						<!-- ============================================================== -->
+						<!-- ============================================================== -->
+						<!-- followers by locations   -->
+						<!-- ============================================================== -->
+
+						<!-- ============================================================== -->
+						<!-- end followers by locations  -->
+						<!-- ============================================================== -->
+					</div>
+					<div class="row">
+						<!-- ============================================================== -->
+						<!-- campaign activities   -->
+						<!-- ============================================================== -->
+						<div class="col-lg-12">
+							<div class="section-block">
+								<h3 class="section-title">Previously studied history</h3>
+							</div>
+							<div class="card">
+								<div class="campaign-table table-responsive">
+									<table class="table">
+										<thead>
+											<tr class="border-0">
+												<th class="border-0">School</th>
+												<th class="border-0">School Name</th>
+												<th class="border-0">Level</th>
+												<th class="border-0">Year</th>
+												<th class="border-0">gpa</th>
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="m-r-10"><img src="assets/images/dribbble.png" alt="user"
+															width="35"></div>
+												</td>
+												<td>Srisuphan School </td>
+												<td>Grade 1-3 </td>
+												<td>2008 - 2010</td>
+												<td>3.78</td>
+
+
+												<td>
+													<div class="dropdown float-right">
+														<a href="#" class="dropdown-toggle card-drop"
+															data-toggle="dropdown" aria-expanded="true">
+															<i class="mdi mdi-dots-vertical"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<!-- item-->
+															<a href="javascript:void(0);" class="dropdown-item">Sales
+																Report</a>
+															<!-- item-->
+															<a href="javascript:void(0);" class="dropdown-item">Export
+																Report</a>
+															<!-- item-->
+															<a href="javascript:void(0);"
+																class="dropdown-item">Profit</a>
+															<!-- item-->
+															<a href="javascript:void(0);"
+																class="dropdown-item">Action</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="m-r-10"><img src="assets/images/github.png" alt="user"
+															width="35"></div>
+												</td>
+												<td>Watkachao School </td>
+												<td>Grade 4-6</td>
+												<td>2011 - 2013</td>
+												<td>3.98</td>
+												<td>
+													<div class="dropdown float-right">
+														<a href="#" class="dropdown-toggle  card-drop"
+															data-toggle="dropdown" aria-expanded="true">
+															<i class="mdi mdi-dots-vertical"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<!-- item-->
+															<a href="javascript:void(0);" class="dropdown-item">Sales
+																Report</a>
+															<!-- item-->
+															<a href="javascript:void(0);" class="dropdown-item">Export
+																Report</a>
+															<!-- item-->
+															<a href="javascript:void(0);"
+																class="dropdown-item">Profit</a>
+															<!-- item-->
+															<a href="javascript:void(0);"
+																class="dropdown-item">Action</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="m-r-10"><img src="assets/images/dropbox.png" alt="user"
+															width="35"></div>
+												</td>
+												<td>Dhammaraj Suksa School </td>
+												<td>Grade 7 - 12</td>
+												<td>2014 - 2019</td>
+												<td>3.75</td>
+
+												<td>
+													<div class="dropdown float-right">
+														<a href="#" class="dropdown-toggle  card-drop"
+															data-toggle="dropdown" aria-expanded="true">
+															<i class="mdi mdi-dots-vertical"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<!-- item-->
+															<a href="javascript:void(0);" class="dropdown-item">Sales
+																Report</a>
+															<!-- item-->
+															<a href="javascript:void(0);" class="dropdown-item">Export
+																Report</a>
+															<!-- item-->
+															<a href="javascript:void(0);"
+																class="dropdown-item">Profit</a>
+															<!-- item-->
+															<a href="javascript:void(0);"
+																class="dropdown-item">Action</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="m-r-10"><img src="assets/images/github.png" alt="user"
+															width="35"></div>
+												</td>
+												<td>Maejo University </td>
+												<td>Bachelor’s Degree</td>
+												<td>2020 - Now</td>
+												<td> - </td>
+
+												<td>
+													<div class="dropdown float-right">
+														<a href="#" class="dropdown-toggle  card-drop"
+															data-toggle="dropdown" aria-expanded="true">
+															<i class="mdi mdi-dots-vertical"></i>
+														</a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<!-- item-->
+															<a href="javascript:void(0);" class="dropdown-item">Sales
+																Report</a>
+															<!-- item-->
+															<a href="javascript:void(0);" class="dropdown-item">Export
+																Report</a>
+															<!-- item-->
+															<a href="javascript:void(0);"
+																class="dropdown-item">Profit</a>
+															<!-- item-->
+															<a href="javascript:void(0);"
+																class="dropdown-item">Action</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!-- ============================================================== -->
+						<!-- end campaign activities   -->
+						<!-- ============================================================== -->
+					</div>
+					<!-- ============================================================== -->
+					<!-- recommended campaigns   -->
+					<!-- ============================================================== -->
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="section-block">
+								<h3 class="section-title">My Project</h3>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="card campaign-card text-center">
+								<div class="card-body">
+									<div class="campaign-img"><img src="assets/images/dribbble.png" alt="user"
+											class="user-avatar-xl"></div>
+									<div class="campaign-info">
+										<h3 class="mb-1">Web project</h3>
+										<p class="mb-3">My first web design</p>
+										<p class="mb-1">Views:<span class="text-dark font-medium ml-2">2,500,000</span>
+										</p>
+										<a href="#" class=""><i
+												class="fab fa-github-square mt-3 fa-3x github-color"></i> </a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="card campaign-card text-center">
+								<div class="card-body">
+									<div class="campaign-img"><img src="assets/images/dribbble.png" alt="user"
+											class="user-avatar-xl"></div>
+									<div class="campaign-info">
+										<h3 class="mb-1">Java Algorithm</h3>
+										<p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+										<p class="mb-1">Views:<span class="text-dark font-medium ml-2">500,000</span>
+										</p>
+										<a href="#" class=""><i
+												class="fab fa-github-square mt-3 fa-3x github-color"></i> </a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="card campaign-card text-center">
+								<div class="card-body">
+									<div class="campaign-img"><img src="assets/images/dribbble.png" alt="user"
+											class="user-avatar-xl"></div>
+									<div class="campaign-info">
+										<h3 class="mb-1">Web project</h3>
+										<p class="mb-3">My first web design</p>
+										<p class="mb-1">Views:<span class="text-dark font-medium ml-2">2,500,000</span>
+										</p>
+										<a href="#" class=""><i
+												class="fab fa-github-square mt-3 fa-3x github-color"></i> </a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="card campaign-card text-center">
+								<div class="card-body">
+									<div class="campaign-img"><img src="assets/images/dribbble.png" alt="user"
+											class="user-avatar-xl"></div>
+									<div class="campaign-info">
+										<h3 class="mb-1">Web project</h3>
+										<p class="mb-3">My first web design</p>
+										<p class="mb-1">Views:<span class="text-dark font-medium ml-2">2,500,000</span>
+										</p>
+										<a href="#" class=""><i
+												class="fab fa-github-square mt-3 fa-3x github-color"></i> </a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ============================================================== -->
+					<!-- end recommended campaigns   -->
+					<!-- ============================================================== -->
+					<!-- ============================================================== -->
+					<!-- end content  -->
+					<!-- ============================================================== -->
+					<div class="container-fluid">
+
+
+						<div class="card">
+							<h5 class="card-header">Basic Map</h5>
+							<div class="card-body">
+								<div id="map" class="gmaps"></div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+			<!-- ============================================================== -->
+			<!-- footer -->
+			<!-- ============================================================== -->
+			<div class="footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+							Copyright © 2018 Concept. All rights reserved. Dashboard by <a
+								href="https://colorlib.com/wp/">Colorlib</a>.
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+							<div class="text-md-right footer-links d-none d-sm-block">
+								<a href="javascript: void(0);">About</a>
+								<a href="javascript: void(0);">Support</a>
+								<a href="javascript: void(0);">Contact Us</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ============================================================== -->
+			<!-- end footer -->
+			<!-- ============================================================== -->
+		</div>
+	</div>
+
+	<!-- ============================================================== -->
+	<!-- footer -->
+	<!-- ============================================================== -->
+
+	<!-- ============================================================== -->
+	<!-- end footer -->
+	<!-- ============================================================== -->
+	</div>
+	<!-- ============================================================== -->
+	<!-- end wrapper  -->
+	<!-- ============================================================== -->
+	</div>
+	<!-- ============================================================== -->
+	<!-- end main wrapper  -->
+	<!-- ============================================================== -->
+	<!-- Optional JavaScript -->
+	<!-- jquery 3.3.1 -->
+	<script src="documentation/js/kitvue.js"></script>
+	<script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+	<!-- bootstap bundle js -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+	<!-- slimscroll js -->
+	<script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+	<!-- main js -->
+	<script src="assets/libs/js/main-js.js"></script>
+	<!-- morris-chart js -->
+	<script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+	<script src="assets/vendor/charts/morris-bundle/morris.js"></script>
+	<script src="assets/vendor/charts/morris-bundle/morrisjs.html"></script>
+	<!-- chart js -->
+	<script src="assets/vendor/charts/charts-bundle/Chart.bundle.js"></script>
+	<script src="assets/vendor/charts/charts-bundle/chartjs.js"></script>
+	<!-- dashboard js -->
+	<script src="assets/libs/js/dashboard-influencer.js"></script>
+	<script src="/concept-master/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+	<script src="/concept-master/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+	<script src="/concept-master/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+	<script src="/concept-master/assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+	<script src="/concept-master/assets/libs/js/main-js.js"></script>
+	<script src="/concept-master/assets/libs/js/gmaps.min.js"></script>
+	<script src="/concept-master/assets/libs/js/google_map.js">
+	</script>
+	<script
+		src="https://maps.google.com/maps/api/js?key=AIzaSyBUb3jDWJQ28vDJhuQZxkC0NXr_zycm8D0&amp;sensor=true"></script>
+
+</body>
+
+</html>
