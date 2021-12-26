@@ -153,7 +153,7 @@
 						<li class="nav-item dropdown nav-user">
 							<a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-									src="assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+								src="http://personnel.mju.ac.th/photomju/E216.jpg" alt="" class="user-avatar-md rounded-circle"></a>
 							<div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
 								aria-labelledby="navbarDropdownMenuLink2">
 								<div class="nav-user-info">
@@ -519,7 +519,7 @@
 									<div class="row">
 										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
 											<div class="text-center">
-												<img src="assets/images/avatar-1.jpg" alt="User Avatar"
+												<img src="http://personnel.mju.ac.th/photomju/E216.jpg" alt="User Avatar"
 													class="rounded-circle user-avatar-xxl">
 											</div>
 										</div>
@@ -751,18 +751,18 @@
 						<!-- ============================================================== -->
 						<div class="col-lg-12">
 							<div class="section-block">
-								<h3 class="section-title">Previously studied history</h3>
+								<h3 class="section-title">{{history[0]}}</h3>
 							</div>
 							<div class="card">
 								<div class="campaign-table table-responsive">
 									<table class="table">
 										<thead>
 											<tr class="border-0">
-												<th class="border-0">School</th>
-												<th class="border-0">School Name</th>
-												<th class="border-0">Level</th>
-												<th class="border-0">Year</th>
-												<th class="border-0">gpa</th>
+												<th class="border-0">{{history[1]}}</th>
+												<th class="border-0">{{history[2]}}</th>
+												<th class="border-0">{{history[3]}}</th>
+												<th class="border-0">{{history[4]}}</th>
+												<th class="border-0">{{history[5]}}</th>
 
 											</tr>
 										</thead>
@@ -772,10 +772,10 @@
 													<div class="m-r-10"><img src="assets/images/dribbble.png" alt="user"
 															width="35"></div>
 												</td>
-												<td>Srisuphan School </td>
-												<td>Grade 1-3 </td>
-												<td>2008 - 2010</td>
-												<td>3.78</td>
+												<td>{{history[6]}}</td>
+												<td>{{history[7]}}</td>
+												<td>{{history[8]}}</td>
+												<td>{{history[9]}}</td>
 
 
 												<td>
@@ -806,10 +806,10 @@
 													<div class="m-r-10"><img src="assets/images/github.png" alt="user"
 															width="35"></div>
 												</td>
-												<td>Watkachao School </td>
-												<td>Grade 4-6</td>
-												<td>2011 - 2013</td>
-												<td>3.98</td>
+												<td>{{history[10]}}</td>
+												<td>{{history[11]}}</td>
+												<td>{{history[12]}}</td>
+												<td>{{history[13]}}</td>
 												<td>
 													<div class="dropdown float-right">
 														<a href="#" class="dropdown-toggle  card-drop"
@@ -838,10 +838,10 @@
 													<div class="m-r-10"><img src="assets/images/dropbox.png" alt="user"
 															width="35"></div>
 												</td>
-												<td>Dhammaraj Suksa School </td>
-												<td>Grade 7 - 12</td>
-												<td>2014 - 2019</td>
-												<td>3.75</td>
+												<td>{{history[14]}} </td>
+												<td>{{history[15]}}</td>
+												<td>{{history[16]}}</td>
+												<td>{{history[17]}}</td>
 
 												<td>
 													<div class="dropdown float-right">
@@ -871,10 +871,10 @@
 													<div class="m-r-10"><img src="assets/images/github.png" alt="user"
 															width="35"></div>
 												</td>
-												<td>Maejo University </td>
-												<td>Bachelor’s Degree</td>
-												<td>2020 - Now</td>
-												<td> - </td>
+												<td>{{history[18]}}</td>
+												<td>{{history[19]}}</td>
+												<td>{{history[20]}}</td>
+												<td>{{history[21]}}</td>
 
 												<td>
 													<div class="dropdown float-right">
@@ -915,7 +915,7 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="section-block">
-								<h3 class="section-title">My Project</h3>
+								<h3 class="section-title">{{Project[0]}}</h3>
 							</div>
 						</div>
 						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -924,9 +924,9 @@
 									<div class="campaign-img"><img src="assets/images/dribbble.png" alt="user"
 											class="user-avatar-xl"></div>
 									<div class="campaign-info">
-										<h3 class="mb-1">Web project</h3>
-										<p class="mb-3">My first web design</p>
-										<p class="mb-1">Views:<span class="text-dark font-medium ml-2">2,500,000</span>
+										<h3 class="mb-1">{{Project[1]}}</h3>
+										<p class="mb-3">{{Project[2]}}</p>
+										<p class="mb-1">{{Project[3]}}<span class="text-dark font-medium ml-2">{{Project[4]}}</span>
 										</p>
 										<a href="#" class=""><i
 												class="fab fa-github-square mt-3 fa-3x github-color"></i> </a>
@@ -941,9 +941,9 @@
 									<div class="campaign-img"><img src="assets/images/dribbble.png" alt="user"
 											class="user-avatar-xl"></div>
 									<div class="campaign-info">
-										<h3 class="mb-1">Java Algorithm</h3>
-										<p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-										<p class="mb-1">Views:<span class="text-dark font-medium ml-2">500,000</span>
+										<h3 class="mb-1">{{Project[5]}}</h3>
+										<p class="mb-3">{{Project[6]}} </p>
+										<p class="mb-1">{{Project[7]}}<span class="text-dark font-medium ml-2">{{Project[8]}}</span>
 										</p>
 										<a href="#" class=""><i
 												class="fab fa-github-square mt-3 fa-3x github-color"></i> </a>
@@ -958,9 +958,9 @@
 									<div class="campaign-img"><img src="assets/images/dribbble.png" alt="user"
 											class="user-avatar-xl"></div>
 									<div class="campaign-info">
-										<h3 class="mb-1">Web project</h3>
-										<p class="mb-3">My first web design</p>
-										<p class="mb-1">Views:<span class="text-dark font-medium ml-2">2,500,000</span>
+										<h3 class="mb-1">{{Project[1]}}</h3>
+										<p class="mb-3">{{Project[2]}}</p>
+										<p class="mb-1">{{Project[3]}}<span class="text-dark font-medium ml-2">{{Project[4]}}</span>
 										</p>
 										<a href="#" class=""><i
 												class="fab fa-github-square mt-3 fa-3x github-color"></i> </a>
@@ -975,9 +975,9 @@
 									<div class="campaign-img"><img src="assets/images/dribbble.png" alt="user"
 											class="user-avatar-xl"></div>
 									<div class="campaign-info">
-										<h3 class="mb-1">Web project</h3>
-										<p class="mb-3">My first web design</p>
-										<p class="mb-1">Views:<span class="text-dark font-medium ml-2">2,500,000</span>
+										<h3 class="mb-1">{{Project[1]}}</h3>
+										<p class="mb-3">{{Project[2]}}</p>
+										<p class="mb-1">{{Project[3]}}<span class="text-dark font-medium ml-2">{{Project[4]}}</span>
 										</p>
 										<a href="#" class=""><i
 												class="fab fa-github-square mt-3 fa-3x github-color"></i> </a>
@@ -997,7 +997,7 @@
 
 
 						<div class="card">
-							<h5 class="card-header">Basic Map</h5>
+							<h5 class="card-header">{{map}}</h5>
 							<div class="card-body">
 								<div id="map" class="gmaps"></div>
 							</div>
